@@ -1,0 +1,305 @@
+
+  #myList {
+    display: none;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100vw; 
+    height: 100vh;
+    background-color: white;
+   overflow: none;
+  
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
+.hamburger-menu {
+    display: inline-block;
+    cursor: pointer;
+    text-align: right;
+    height: 30px;
+    width: 29px;
+    margin-top: 10px;
+    padding-left: 9px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-right: 9px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+  }
+
+  .hamburger-menu:hover{
+    
+    border-radius: 25px;
+    background-color: gainsboro;
+    transition: 0.4s;
+    
+    
+  }
+  
+  .hamburger-menu:active{
+    transform: translate(4px,4px);
+    border-radius: 25px;
+    background-color: gainsboro;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 26px;
+    height: 2px;
+    background-color: rgb(138, 138, 240);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: rotate(-45deg) translate(-4px, 2px);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: rotate(45deg) translate(-8.5px, -8.5px);
+  }
+header {
+  display: inline-block;
+ 
+}
+
+
+
+.img{
+  object-fit: fill;
+  align-items: left;
+  text-align: left;
+  display: inline-block;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 195px;
+  height: 50px;
+  margin-top: -5px;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #ddd;
+}
+
+.header_logo{
+  width: 195px;
+  height: 50px;
+}
+
+.footer_logo{
+  padding-top: 10px;
+  width: 189px;
+  height: 70px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.menu-nav__item{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  border-bottom: 1px solid #b3b3b3;
+  color: #000;
+  display: block;
+  font-size: 18px;
+  height: 48px;
+  line-height: 52px;
+  padding: 0 1.5em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  background: transparent;
+  text-align: left;
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.roof{
+  content: " ";
+  display: block;
+  width: 100%;
+  background-color: blue;
+  height: 3px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.header{
+  position: relative;
+  display: block;
+}
+
+
+.section-menu {
+  display: block;
+  background-color: white;
+  
+}
+
+
+.hamburger-menu {
+  display: none;
+}
+
+
+@media (max-width: 768px){
+
+  .section-menu {
+    display: none;
+  }
+  #myList{
+    display: block;
+  }
+  .text-content{
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+
+
+@media (min-width: 769px){
+
+  .section-menu {
+    display: block;
+  }
+
+ 
+  .hamburger-menu {
+    display: none;
+  }
+  #myList{
+    display: none;
+  }
+  .menu-nav__item{
+    display: none;
+  }
+  .text-content{
+    flex-direction: red;
+  }
+}
+
+footer{
+  background-color: #000;
+  height: 144px;
+
+}
+
+.menu-nav__link{
+  vertical-align: top;
+  padding-top: 10px;
+  margin-top: 10px;
+  padding-right: 5px;
+  padding-left: 25px;
+ 
+}
+.menu-nav__link-active{
+  color: red;
+  vertical-align: top;
+  padding-top: 20px;
+  margin-top: 10px;
+  padding-right: 5px;
+  padding-left: 25px;
+}
+
+a {
+  color: blue;
+  text-decoration: inherit;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 25px;
+  line-height: 1.2;
+  margin-top: 10px;
+    
+}
+
+a:hover {
+  color: rgba(104, 104, 230, 0.829);
+  text-decoration: underline;
+}
+
+.menu-nav__link-active:hover{
+  color: red;
+}
+
+.text-img{
+  background-image: url("images/Legon-University-of-Ghana.jpg");
+  
+
+  background-size:cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  color:black;
+  font-weight: bold;
+  font-size: larg;
+  text-align: center;
+}
+
+.text-img {
+  position: relative;
+}
+
+.text-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(55, 55, 255, 0.5);
+}
+
+.head-section{
+  border: solid;
+  border-color: red;
+  border-width: 5px;
+}
+
+.basement{
+  content: " ";
+  display: block;
+  width: 100%;
+  background-color:blue;
+  height: 3px;
+  position: relative; 
+}
+
+
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 15px 15px 15px 15px  ;
+}
+
+.footer__link{
+    color: rgb(22, 22, 22);
+    padding-right: 5px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    margin-top: -25px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__link:hover{
+  color:gray;
+  text-decoration: underline;
+}
