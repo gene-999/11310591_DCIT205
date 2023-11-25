@@ -1,5 +1,5 @@
 
-  #myList {
+  .myList {
     display: none;
     top: 0;
     left: 0;
@@ -7,8 +7,10 @@
     width: 100vw; 
     height: 100vh;
     background-color: white;
-   overflow: none;
-  
+    overflow: none;
+    margin-top: 0;
+    padding-bottom: 5px;
+    height: 650px;
   }
 
   ul {
@@ -26,7 +28,8 @@
     padding-bottom: 8px;
     padding-top: 8px;
     padding-right: 9px;
-    position: fixed;
+    margin-right: 10px;
+    position: relative;
     right: 0;
     top: 0;
     transition: 0.4s;
@@ -69,8 +72,6 @@ header {
   display: inline-block;
  
 }
-
-
 
 .img{
   object-fit: fill;
@@ -128,11 +129,12 @@ body{
 .roof{
   content: " ";
   display: block;
-  width: 100%;
+  width:100%;
   background-color: blue;
   height: 3px;
   position: relative;
   margin-bottom: 10px;
+  
 }
 
 .header{
@@ -144,7 +146,7 @@ body{
 .section-menu {
   display: block;
   background-color: white;
-  
+  margin-bottom: 10px;
 }
 
 
@@ -158,7 +160,7 @@ body{
   .section-menu {
     display: none;
   }
-  #myList{
+  .myList{
     display: block;
   }
   .text-content{
@@ -168,6 +170,7 @@ body{
   .hamburger-menu {
     display: block;
   }
+  
 }
 
 
@@ -182,7 +185,7 @@ body{
   .hamburger-menu {
     display: none;
   }
-  #myList{
+  .myList{
     display: none;
   }
   .menu-nav__item{
@@ -239,14 +242,12 @@ a:hover {
 
 .text-img{
   background-image: url("images/Legon-University-of-Ghana.jpg");
-  
-
   background-size:cover;
   background-repeat: no-repeat;
-  opacity: 1;
-  color:black;
+  opacity: 0.7;
+  color:#fff;
   font-weight: bold;
-  font-size: larg;
+  font-size: large;
   text-align: center;
 }
 
@@ -262,6 +263,7 @@ a:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(55, 55, 255, 0.5);
+  
 }
 
 .head-section{
@@ -302,4 +304,15 @@ a:hover {
 .footer__link:hover{
   color:gray;
   text-decoration: underline;
+}
+
+.footer__link-active{
+  color: rgb(22, 22, 22);
+}
+
+.footer__link-active:hover{
+  color: blue;
+}
+.footer__link-active:active{
+  color: blue;
 }
