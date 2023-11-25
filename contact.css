@@ -1,0 +1,75 @@
+.text-content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    background-color: white;
+  
+}
+
+.text-content::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: white;
+    z-index: -1;
+  }
+
+  .text-area{
+    line-height: 1.85;
+    color: #222222;
+    font-weight: lighter;
+    font-size: normal;
+    display: block;
+    width: 663px;
+    margin-right: 8px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 250px;
+    margin-bottom: 10px;
+}
+
+  h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: rgb(37, 37, 153);
+    border: solid;
+    display: block;
+    border-top: 0px;
+    border-left:0px;
+    border-right: 0px;
+    border-width: 1px;
+    border-color: grey;
+}
+
+#compssa_facade{
+    width: 763px;
+    height: 439px;
+    object-fit: cover;
+    padding: 0px;
+    margin-top: 10px;
+    border: solid;
+    border-color: gray;
+    border-width: 1px;
+    background-color: white;
+    margin-left: 250px;
+  }
+ 
+
+  body{
+    background-color: white;
+  }
+
+  .roof_bottom{
+    content: " ";
+    display: block;
+    width:100%;
+    background-color: blue;
+    height: 3px;
+    position: relative;
+    margin-bottom: 4px;
+  }
