@@ -1,0 +1,55 @@
+.text-content{
+    position: relative;
+    z-index: 1;
+    display: flex;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+.text-content::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background-color: #ddd;
+    z-index: -1;
+  }
+  .commonarea{
+    align-items: center;
+    display: block;
+  }
+
+  h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: blue;
+    border: solid;
+    display: block;
+    border-top: 0px;
+    border-left:0px;
+    border-right: 0px;
+    border-width: 1px;
+    border-color: grey;
+    height: 33px;
+    width: 100%;
+    padding: 10px 10px 10px 10px; 
+    background-color: white;
+  }
+
+  .text-area{
+    color: rgb(37, 37, 37);
+    font-weight: lighter;
+    font-size: larger;
+    display: flex;
+    background-color: white;
+    padding-left: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .text-area > ul {
+    display: block;
+  }
